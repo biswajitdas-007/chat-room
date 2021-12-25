@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+}
+#container {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 40vw;
+  padding: 20px;
+}
+.left {
+  background-color: turquoise;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 100px;
+  float: left;
+  clear: both;
+}
+.right {
+  background-color: turquoise;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 100px;
+  margin: 10px;
+  float: right;
+  clear: both;
+}
+#form {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+#message {
+  width: 80%;
+  padding: 10px;
+}
+button {
+  padding: 10px;
+}
