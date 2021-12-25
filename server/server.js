@@ -29,6 +29,9 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('user-joined', user);
         socket.emit("welcome", {message:"Welcome", user:users[socket.id]})
     })
+    socket.on("message", (msg) => {
+        socket.broadcast.emit('message', {message:msg, user:users[socket.id]});
+    })
 })
 
 // listening to port 3000
