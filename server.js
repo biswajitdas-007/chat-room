@@ -14,12 +14,12 @@ const io = new Server(server);
 const users = {};
 
 // allow js to use .js and .css files
-app.use("/js", express.static('../js/'));
-app.use("/css", express.static('../css/'));
+app.use(express.static(__dirname + "/js"));
+app.use(express.static(__dirname + "/css"));
 
 // loading our landing page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "../public", "/index.html"))
+    res.sendFile(path.join(__dirname, "/public", "/index.html"))
 })
 
 //establishing connection with socket io
